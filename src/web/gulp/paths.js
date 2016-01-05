@@ -78,16 +78,16 @@ const paths = {
      * - 'docs'         application documentation
      */
     build: {
-        basePath:       `${root}/build/`,
+        basePath:       `${root}/wwwroot/`,
         dist: {
-            basePath:   `${root}/build/dist/`,
-            fonts:      `${root}/build/dist/fonts/`,
-            images:     `${root}/build/dist/images/`,
-            styles:     `${root}/build/dist/styles/`,
-            scripts:    `${root}/build/dist/scripts/`
+            basePath:   `${root}/wwwroot/dist/`,
+            fonts:      `${root}/wwwroot/dist/fonts/`,
+            images:     `${root}/wwwroot/dist/images/`,
+            styles:     `${root}/wwwroot/dist/styles/`,
+            scripts:    `${root}/wwwroot/dist/scripts/`
         },
-        docs:           `${root}/build/docs/`,
-        testReports:    `${root}/build/test-reports/`
+        docs:           `${root}/wwwroot/docs/`,
+        testReports:    `${root}/wwwroot/test-reports/`
     }
 };
 
