@@ -9,17 +9,17 @@ const paths = {
     root : root, 
     base: base,
     app : {
-        basePath : `${base}/src`,
-        ts : [`${base}/src/app/**/*.ts`]
+        basePath : `${base}/app`,
+        ts : `${base}/app/**/*.ts`
     },
     clean : {
-        ts : [`${base}/src/app/**/*.js`, `${base}/src/app/**/*.map`]
+        ts : ['./wwwroot/app/**/*.js', './wwwroot/app/**/*.map']
     },
     build : {
-        ts : `${base}/src/app`
+        ts : `${base}/app`
     },
     config : {
-        ts : `${base}/src/app/tsconfig.json`
+        tsproj : `${base}/tsconfig.json`
     }
 
     //root: root,

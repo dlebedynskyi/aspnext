@@ -1,0 +1,1 @@
+{"version":3,"sources":["boot.ts"],"names":[],"mappings":"AAAA,wBAA2B,2BAC3B,CAAC,CADqD;AACtD,8BAA2B,iBAE3B,CAAC,CAF2C;AAE5C,mBAAS,CAAC,4BAAY,CAAC,CAAC","file":"boot.js","sourcesContent":["import {bootstrap}    from 'angular2/platform/browser'\r\nimport {AppComponent} from './app.component'\r\n\r\nbootstrap(AppComponent);"],"sourceRoot":"/source/"}
