@@ -15,11 +15,11 @@ const COLORS = util.colors;
 //                  TASKS
 //=============================================
 /**
- * The 'clean' task delete from path.build and  from path.tmp directories.
+ * The 'clean' task delete *.js and *.map from target dir
  * @param {Promise}. see https://github.com/sindresorhus/del/releases/tag/v2.0.0
  */
-gulp.task('clean', () => {
-    const files = [].concat(path.build.basePath, path.tmp.basePath);
+gulp.task('clean:src', () => {
+    const files = [].concat(path.clean.ts);
     LOG('Cleaning: ' + COLORS.blue(files));
    
     return del(files).then(paths =>{
