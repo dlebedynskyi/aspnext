@@ -4,6 +4,7 @@ import util from 'gulp-util';
 import ts from 'gulp-typescript';
 import sourcemaps from 'gulp-sourcemaps';
 import typescript  from 'typescript';
+import {isDev, isProduction, isStaging, getEnvironment} from '../options';
 
 //=============================================
 //            UTILS FUNCTIONS
@@ -19,6 +20,8 @@ const COLORS = util.colors;
  */
  
 gulp.task('compile:src', ()=>{
+    LOG('Enviroment is set to ', getEnvironment());
+        
     var tsProject = ts.createProject(paths.config.tsproj, {
         typescript: typescript
     });
@@ -28,17 +31,4 @@ gulp.task('compile:src', ()=>{
          .pipe(ts(tsProject))
          .pipe(sourcemaps.write('.'))
          .pipe(gulp.dest(paths.build.ts));
-
-
-    //LOG('Compling: project file '+ COLORS.blue(paths.config.ts));
-    //var sourceTsFiles = [path.app.ts, 
-    //                     path.config.typings]; //reference to library .d.ts files
-    //var tsProject = ts.createProject(paths.config.ts);
-    //var tsResult =  gulp.src(sourceTsFiles)
-    //                    .pipe(sourcemaps.init())
-    //                    .pipe(tsc(tsProject));
-
-    //return tsResult.js
-    //    .pipe(sourcemaps.write('.'))
-    //    .pipe(gulp.dest(paths.build.ts));                    
 });

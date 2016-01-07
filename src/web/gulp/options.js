@@ -5,21 +5,18 @@ const enviromentVarieble = 'ASPNET_ENV';
  * isDev - returns true if Enviroment Varieble 'ASPNET_ENV' is set to Development or not found
  * isProduction - returns true is Enviroment Varieble 'ASPNET_ENV' is set to Production
  */
-export default { 
-    isDev : isDev,
-    isStaging : isStaging,
-    isProduction : isProduction
-};
-
-
-function isDev(){
-    return !util.env[enviromentVarieble] || util.env[enviromentVarieble] === 'Development';
+export function getEnvironment(){
+    return util.env[enviromentVarieble];
+}
+export function isDev(){
+    return getEnviroment() === 'Development';
 }
 
-function isStaging(){
-    return util.env[enviromentVarieble] === 'Staging';
+export function isStaging(){
+    return getEnviroment() === 'Staging';
 }
 
-function isProduction(){
-    return util.env[enviromentVarieble] === 'Production';
+export function isProduction(){
+    var en = getEnviroment();
+    return !en ||  en === 'Production';
 }
