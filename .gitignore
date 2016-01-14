@@ -4,3 +4,4 @@ node_modules
 src/web/web.xproj.user
 src/web/wwwroot/src/app/**/*.map
 src/web/wwwroot/src/app/**/*.js
+*.log
