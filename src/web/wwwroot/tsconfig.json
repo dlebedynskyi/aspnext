@@ -7,8 +7,5 @@
         "rootDir": ".",
         "sourceMap": true
     },
-    "exclude": [
-        "node_modules",
-        "wwwroot"
-    ]
+    "exclude": []
 }

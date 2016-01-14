@@ -1,10 +1,12 @@
+/* global System */
 System.config({
   baseURL: "/",
   defaultJSExtensions: true,
   transpiler: "typescript",
   typescriptOptions: {
     "module": "commonjs",
-    "experimentalDecorators": true
+    "experimentalDecorators": true,
+    emitDecoratorMetadata: true,
   },
   paths: {
     "npm:*": "jspm_packages/npm/*",
@@ -12,9 +14,9 @@ System.config({
   },
 
   packages: {
-      "app": {
-          "defaultExtension": "ts"
-      }
+    "app": {
+      "defaultExtension": "ts"
+    }
   },
 
   map: {

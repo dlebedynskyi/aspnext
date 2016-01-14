@@ -5,3 +5,10 @@ src/web/web.xproj.user
 src/web/wwwroot/src/app/**/*.map
 src/web/wwwroot/src/app/**/*.js
 *.log
+
+src/web/project.lock.json
+
+*.map
+
+src/web/wwwroot/app/**/*.js.map
+src/web/wwwroot/app/**/*.js

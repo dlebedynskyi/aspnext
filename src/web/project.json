@@ -22,7 +22,9 @@
     },
 
     "commands": {
-        "web": "Microsoft.AspNet.Server.Kestrel"
+        "web": "Microsoft.AspNet.Server.Kestrel", 
+        "web-dev": "Microsoft.AspNet.Server.Kestrel --ASPNET_ENV Development",
+        "web-prod": "Microsoft.AspNet.Server.Kestrel --ASPNET_ENV Production"
     },
 
     "frameworks": {
