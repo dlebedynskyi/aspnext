@@ -1,14 +1,15 @@
 jspm_packages
 node_modules
 
-src/web/web.xproj.user
-src/web/wwwroot/src/app/**/*.map
-src/web/wwwroot/src/app/**/*.js
+web.xproj.user
 *.log
 
-src/web/project.lock.json
+project.lock.json
 
 *.map
 
-src/web/wwwroot/app/**/*.js.map
-src/web/wwwroot/app/**/*.js
+wwwroot/app/**/*.js.map
+wwwroot/app/**/*.js
+wwwroot/app/**/*.css
+wwwroot/app/**/*.css.map
+wwwroot/assets/**/*.min.css
