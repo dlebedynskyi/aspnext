@@ -6,10 +6,11 @@ web.xproj.user
 
 project.lock.json
 
-*.map
-
 wwwroot/app/**/*.js.map
 wwwroot/app/**/*.js
+
 wwwroot/app/**/*.css
 wwwroot/app/**/*.css.map
+
 wwwroot/assets/**/*.min.css
+wwwroot/assets/**/*.min.css.map
