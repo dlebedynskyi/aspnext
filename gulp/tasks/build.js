@@ -28,10 +28,11 @@ var baseConfig = {
     }
 };
 var defaultOutput = {
-   format: 'global',
+   //format: 'global',
    minify: true,
    inject: true,
-   mangle:true,
+   //issue https://github.com/angular/angular/issues/6366 in angular2.0.0-beta.1 prevents mangle of files
+   mangle: false,
    sourceMaps: false,
    normalize: true,
    config : baseConfig
