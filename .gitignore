@@ -14,3 +14,5 @@ wwwroot/app/**/*.css.map
 
 wwwroot/assets/**/*.min.css
 wwwroot/assets/**/*.min.css.map
+
+wwwroot/dist/app.min.sfx.js
